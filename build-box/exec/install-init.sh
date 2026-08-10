@@ -21,7 +21,7 @@ if true; then
     echo
   }
 
-  show_title "Preparing the Linux demo environment" | tee -a "$LOG"
+  show_title "Preparing the demo environment" | tee -a "$LOG"
 
   for _ in {1..600}; do
     if [[ -f "$FAILED" ]]; then
