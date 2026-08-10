@@ -10,5 +10,3 @@ fi
 
 scrollcase verify box/*.release.json \
   --public-key keys/example-signing-public.json
-
-exit 0
