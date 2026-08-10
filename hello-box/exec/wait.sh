@@ -9,19 +9,17 @@ i=0
 
 while true; do
   if [[ -f "$READY" ]]; then
+    sleep 1
     printf "\r✓ Demo ready"
     exit 0
   fi
 
   if [[ -f "$FAILED" ]]; then
+    sleep 1
     printf "\r✗ Demo setup failed"
     exit 1
   fi
   
-  if [[ i<=0 ]]; then
-    printf " "
-  fi
-
   dots=$((i % 4))
 
   printf "\rPreparing Scrollcase demo%-3s" "$(printf '%*s' "$dots" '' | tr ' ' '.')"
@@ -29,3 +27,4 @@ while true; do
   i=$((i + 1))
   sleep 1
 done
+
