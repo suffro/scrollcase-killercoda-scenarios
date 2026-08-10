@@ -4,14 +4,21 @@ set -Eeuo pipefail
 
 READY="/tmp/scrollcase-demo-ready"
 FAILED="/tmp/scrollcase-demo-failed"
+LOG="/tmp/scrollcase-run-demo.log"
 
 if true; then
   clear
-  echo
-  title="Preparing the Scrollcase demo environment"
-  echo "##############${title//?/#}"
-  echo "#####  $title  #####"
-  echo
+  : > "$LOG"
+
+  show_title() {
+    local title="$1"
+    echo
+    echo "##############${title//?/#}"
+    echo "#####  $title  #####"
+    echo
+  }
+
+  show_title "Preparing the Scrollcase demo environment" | tee -a "$LOG"
 
   status="waiting"
   while [[ "$status" == "waiting" ]]; do
@@ -24,16 +31,11 @@ if true; then
     fi
   done
 
-  clear
-  echo
   if [[ "$status" == "ready" ]]; then
-    title="Scrollcase demo environment ready"
+    show_title "Scrollcase demo environment ready" | tee -a "$LOG"
   else
-    title="Scrollcase demo environment setup failed"
+    show_title "Scrollcase demo environment setup failed" | tee -a "$LOG"
   fi
-  echo "##############${title//?/#}"
-  echo "#####  $title  #####"
-  echo
 
   [[ "$status" == "ready" ]]
 fi
