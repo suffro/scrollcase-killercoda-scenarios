@@ -5,14 +5,17 @@
   "details": {
     "intro": {
       "text": "intro.md",
-      "background": "setup.sh"
+      "background": "exec/setup.sh"
     },
 
     "steps": [
       {
-        "title": "Verify and run the box",
-        "text": "demo.md",
-        "foreground": "wait.sh"
+        "title": "Verify the box",
+        "text": "verify.md"
+      },
+      {
+        "title": "Run the box",
+        "text": "run.md"
       }
     ],
 
