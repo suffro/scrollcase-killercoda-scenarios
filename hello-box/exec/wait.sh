@@ -22,9 +22,12 @@ while true; do
     exit 1
   fi
   
+  if (i<=0); then
+    echo
+  fi
+
   dots=$((i % 4))
 
-  echo -n " "
   printf "\rPreparing Scrollcase demo%-3s" "$(printf '%*s' "$dots" '' | tr ' ' '.')"
 
   i=$((i + 1))
