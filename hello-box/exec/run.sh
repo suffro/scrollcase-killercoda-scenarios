@@ -5,7 +5,6 @@ cd ~/demo
 if true; then
     clear
     echo
-    printf "\r Executing:"
     echo
 fi
 
