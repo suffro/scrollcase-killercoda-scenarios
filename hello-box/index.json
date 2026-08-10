@@ -12,17 +12,17 @@
       {
         "title": "Setting up demo environment",
         "text": "starting.md",
-        "foreground": "exec/wait.sh"
+        "verify": "exec/wait.sh"
       },
       {
         "title": "Verify the box",
         "text": "verify.md",
-        "foreground": "exec/verify.sh"
+        "verify": "exec/verify.sh"
       },
       {
         "title": "Run the box",
         "text": "run.md",
-        "foreground": "exec/run.sh"
+        "verify": "exec/run.sh"
       }
     ],
 
