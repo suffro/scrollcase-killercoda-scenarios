@@ -1,4 +1,4 @@
-# 1. Verify the box
+# Verifing the box
 
 `cd ~/demo`
 `scrollcase verify box/*.release.json --public-key keys/example-signing-public.json`

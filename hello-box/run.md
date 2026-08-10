@@ -1,4 +1,4 @@
-# 2. Run it
+# Running the box
 
 `cd ~/demo`
 `scrollcase run box/*.release.json --public-key keys/example-signing-public.json`
