@@ -1,35 +1,37 @@
 #!/usr/bin/env bash
 
 set -Eeuo pipefail
-{ set +x; } 2>/dev/null
 
 READY="/tmp/scrollcase-demo-ready"
 FAILED="/tmp/scrollcase-demo-failed"
 
-clear
-echo
-echo "########################################################################"
-echo "#####  Preparing the Scrollcase demo environment  #####"
-echo
+if true; then
+  clear
+  echo
+  echo "########################################################################"
+  echo "#####  Preparing the Scrollcase demo environment  #####"
+  echo
 
-while true; do
-  if [[ -f "$READY" ]]; then
-    clear
-    echo
-    echo "########################################################################"
+  status="waiting"
+  while [[ "$status" == "waiting" ]]; do
+    if [[ -f "$READY" ]]; then
+      status="ready"
+    elif [[ -f "$FAILED" ]]; then
+      status="failed"
+    else
+      sleep 1
+    fi
+  done
+
+  clear
+  echo
+  echo "########################################################################"
+  if [[ "$status" == "ready" ]]; then
     echo "#####  Scrollcase demo environment ready  #####"
-    echo
-    exit 0
-  fi
-
-  if [[ -f "$FAILED" ]]; then
-    clear
-    echo
-    echo "########################################################################"
+  else
     echo "#####  Scrollcase demo environment setup failed  #####"
-    echo
-    exit 1
   fi
+  echo
 
-  sleep 1
-done
+  [[ "$status" == "ready" ]]
+fi

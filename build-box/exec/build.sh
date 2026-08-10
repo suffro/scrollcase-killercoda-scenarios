@@ -1,26 +1,25 @@
 #!/usr/bin/env bash
 
 set -Eeuo pipefail
-{ set +x; } 2>/dev/null
 
 cd /root/demo
 
-clear
-echo
-echo "########################################################################"
-echo "#####  Creating a local signing key for the demo  #####"
-echo
-echo '$ scrollcase keygen'
-echo
+if true; then
+  clear
+  echo
+  echo "########################################################################"
+  echo "#####  Creating a local signing key for the demo  #####"
+  echo
+fi
 
 scrollcase keygen
 
-clear
-echo
-echo "########################################################################"
-echo "#####  Building and signing the locked Linux CPU box  #####"
-echo
-echo '$ scrollcase build example-box/linux-x86_64-cpu --weights embed'
-echo
+if true; then
+  clear
+  echo
+  echo "########################################################################"
+  echo "#####  Building and signing the locked Linux CPU box  #####"
+  echo
+fi
 
 scrollcase build example-box/linux-x86_64-cpu --weights embed
