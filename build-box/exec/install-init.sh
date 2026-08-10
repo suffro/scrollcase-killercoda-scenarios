@@ -28,10 +28,18 @@ fi
 
 cd "$DEMO_DIR"
 
+clear
+printf '\nInstalling the Scrollcase CLI.\n\n'
+printf '$ npm install --global scrollcase\n\n'
+
 npm install \
   --global \
   --no-audit \
   --no-fund \
   scrollcase
+
+clear
+printf '\nInitializing the example project and local build toolchain.\n\n'
+printf '$ scrollcase init --install-toolchain\n\n'
 
 scrollcase init --install-toolchain < /dev/null
