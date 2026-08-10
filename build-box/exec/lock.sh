@@ -13,6 +13,8 @@ if true; then
   show_title() {
     local title="$1"
     echo
+    echo
+    echo
     echo "##############${title//?/#}"
     echo "#####  $title  #####"
     echo
