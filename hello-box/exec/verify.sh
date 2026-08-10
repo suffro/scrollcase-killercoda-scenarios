@@ -12,4 +12,6 @@ scrollcase verify box/*.release.json \
 if true; then
     clear
     printf " ✓ Verified"
+    echo
+    echo
 fi
