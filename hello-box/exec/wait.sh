@@ -22,7 +22,9 @@ while true; do
     exit 1
   fi
   
-  if (( i <= 0 )); then
+  if (( i == 0 )); then
+    clear
+    echo
     echo
   fi
 
