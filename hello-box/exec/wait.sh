@@ -8,7 +8,7 @@ FAILED="/tmp/scrollcase-demo-failed"
 i=0
 done=-1
 
-while done<0; do
+while (( done<0 )); do
   if [[ -f "$READY" ]]; then
     printf "\r Preparing Scrollcase: ✓ Demo ready"
     echo
@@ -39,3 +39,5 @@ while done<0; do
 
   sleep 1
 done
+
+echo "."
