@@ -21,9 +21,7 @@ while true; do
   if [[ i>0 ]]; then
     dots=$((i % 4))
 
-    printf "\rPreparing Scrollcase demo%-3s" "$(printf '%*s' "$dots" '' | tr ' ' '.')"
-  else
-    clear
+    printf "\r\n\nPreparing Scrollcase demo%-3s" "$(printf '%*s' "$dots" '' | tr ' ' '.')\n\n"
   fi
 
   i=$((i + 1))
