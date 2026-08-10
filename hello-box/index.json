@@ -10,12 +10,19 @@
 
     "steps": [
       {
+        "title": "Setting up demo environment",
+        "text": "starting.md",
+        "foreground": "exec/wait.sh"
+      },
+      {
         "title": "Verify the box",
-        "text": "verify.md"
+        "text": "verify.md",
+        "background": "exec/verify.sh"
       },
       {
         "title": "Run the box",
-        "text": "run.md"
+        "text": "run.md",
+        "background": "exec/run.sh"
       }
     ],
 
