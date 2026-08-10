@@ -9,8 +9,9 @@ DEMO_DIR="/root/demo"
 if true; then
   clear
   echo
-  echo "########################################################################"
-  echo "#####  Preparing the Linux demo environment  #####"
+  title="Preparing the Linux demo environment"
+  echo "##############${title//?/#}"
+  echo "#####  $title  #####"
   echo
 
   for _ in {1..600}; do
@@ -37,8 +38,9 @@ fi
 if true; then
   clear
   echo
-  echo "########################################################################"
-  echo "#####  Installing the Scrollcase CLI  #####"
+  title="Installing the Scrollcase CLI"
+  echo "##############${title//?/#}"
+  echo "#####  $title  #####"
   echo
 fi
 
@@ -47,8 +49,9 @@ npm install --global --no-audit --no-fund scrollcase
 if true; then
   clear
   echo
-  echo "########################################################################"
-  echo "#####  Initializing the example project and local build toolchain  #####"
+  title="Initializing the example project and local build toolchain"
+  echo "##############${title//?/#}"
+  echo "#####  $title  #####"
   echo
 fi
 

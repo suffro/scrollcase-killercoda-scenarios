@@ -5,8 +5,9 @@ cd ~/demo
 if true; then
   clear
   echo
-  echo "########################################################################"
-  echo "#####  Verifying and running the box with its own Python  #####"
+  title="Verifying and running the box with its own Python"
+  echo "##############${title//?/#}"
+  echo "#####  $title  #####"
   echo
 fi
 

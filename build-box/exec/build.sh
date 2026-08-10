@@ -7,8 +7,9 @@ cd /root/demo
 if true; then
   clear
   echo
-  echo "########################################################################"
-  echo "#####  Creating a local signing key for the demo  #####"
+  title="Creating a local signing key for the demo"
+  echo "##############${title//?/#}"
+  echo "#####  $title  #####"
   echo
 fi
 
@@ -17,8 +18,9 @@ scrollcase keygen
 if true; then
   clear
   echo
-  echo "########################################################################"
-  echo "#####  Building and signing the locked Linux CPU box  #####"
+  title="Building and signing the locked Linux CPU box"
+  echo "##############${title//?/#}"
+  echo "#####  $title  #####"
   echo
 fi
 

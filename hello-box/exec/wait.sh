@@ -8,8 +8,9 @@ FAILED="/tmp/scrollcase-demo-failed"
 if true; then
   clear
   echo
-  echo "########################################################################"
-  echo "#####  Preparing the Scrollcase demo environment  #####"
+  title="Preparing the Scrollcase demo environment"
+  echo "##############${title//?/#}"
+  echo "#####  $title  #####"
   echo
 
   status="waiting"
@@ -25,12 +26,13 @@ if true; then
 
   clear
   echo
-  echo "########################################################################"
   if [[ "$status" == "ready" ]]; then
-    echo "#####  Scrollcase demo environment ready  #####"
+    title="Scrollcase demo environment ready"
   else
-    echo "#####  Scrollcase demo environment setup failed  #####"
+    title="Scrollcase demo environment setup failed"
   fi
+  echo "##############${title//?/#}"
+  echo "#####  $title  #####"
   echo
 
   [[ "$status" == "ready" ]]

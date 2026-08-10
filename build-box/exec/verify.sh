@@ -7,8 +7,9 @@ cd /root/demo
 if true; then
   clear
   echo
-  echo "########################################################################"
-  echo "#####  Verifying the signed box and running its self-test  #####"
+  title="Verifying the signed box and running its self-test"
+  echo "##############${title//?/#}"
+  echo "#####  $title  #####"
   echo
 fi
 

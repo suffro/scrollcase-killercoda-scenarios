@@ -5,8 +5,9 @@ cd ~/demo
 if true; then
   clear
   echo
-  echo "########################################################################"
-  echo "#####  Verifying the signed release and box archive  #####"
+  title="Verifying the signed release and box archive"
+  echo "##############${title//?/#}"
+  echo "#####  $title  #####"
   echo
 fi
 

@@ -7,8 +7,9 @@ cd /root/demo
 if true; then
   clear
   echo
-  echo "########################################################################"
-  echo "#####  Locking the example environment for a reproducible build  #####"
+  title="Locking the example environment for a reproducible build"
+  echo "##############${title//?/#}"
+  echo "#####  $title  #####"
   echo
 fi
 
@@ -17,8 +18,9 @@ scrollcase lock example-box/linux-x86_64-cpu
 if true; then
   clear
   echo
-  echo "########################################################################"
-  echo "#####  Committing the generated project and lock  #####"
+  title="Committing the generated project and lock"
+  echo "##############${title//?/#}"
+  echo "#####  $title  #####"
   echo
 fi
 
