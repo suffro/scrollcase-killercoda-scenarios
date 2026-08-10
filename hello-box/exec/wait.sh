@@ -22,10 +22,10 @@ while true; do
     dots=$((i % 4))
 
     printf "\rPreparing Scrollcase demo%-3s" "$(printf '%*s' "$dots" '' | tr ' ' '.')"
+  else
+    clear
   fi
 
   i=$((i + 1))
   sleep 1
 done
-
-clear
