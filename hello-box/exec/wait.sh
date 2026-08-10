@@ -39,5 +39,3 @@ while (( done<0 )); do
 
   sleep 1
 done
-
-echo "."
