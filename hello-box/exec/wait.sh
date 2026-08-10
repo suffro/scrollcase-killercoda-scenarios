@@ -29,7 +29,7 @@ while (( done<0 )); do
     echo
   fi
 
-  if (( done > -1 ))
+  if (( done > -1 )); then
     dots=$((i % 4))
 
     printf "\r Preparing Scrollcase demo%-3s" "$(printf '%*s' "$dots" '' | tr ' ' '.')"
