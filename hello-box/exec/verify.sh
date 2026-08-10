@@ -2,11 +2,9 @@
 
 cd ~/demo
 
-clear
-
-printf "\r Verifing"
+if true; then
+    clear
+fi
 
 scrollcase verify box/*.release.json \
   --public-key keys/example-signing-public.json
-
-printf "\r Verifing: done"

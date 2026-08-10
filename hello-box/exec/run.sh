@@ -2,7 +2,9 @@
 
 cd ~/demo
 
-clear
+if true; then
+    clear
+fi
 
 printf "\r Running hello-box"
 
