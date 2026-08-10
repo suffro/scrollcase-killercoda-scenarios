@@ -1,0 +1,27 @@
+{
+  "title": "Scrollcase Demo",
+  "description": "Verify and run a real signed Scrollcase box in a disposable Linux environment.",
+
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+
+    "steps": [
+      {
+        "title": "Verify and run the box",
+        "text": "demo.md",
+        "foreground": "wait.sh"
+      }
+    ],
+
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

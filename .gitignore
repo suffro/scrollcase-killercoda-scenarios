@@ -1,3 +1,20 @@
+
+# Demo payload generated when the Codespace is created
+/box/
+/keys/
+/run-box.ts
+/run_box.py
+/package.json
+
+# Python local state
+/__pycache__/
+*.py[cod]
+/.venv/
+
+
+##########################################################################
+########## Node .gitignore (in case the Node consumer is used): ##########
+
 # Logs
 logs
 *.log
@@ -134,3 +151,6 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+##########################################################################
