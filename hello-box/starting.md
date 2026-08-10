@@ -5,4 +5,4 @@ The `box/` directory will contain a real published Linux Scrollcase box and its 
 
 The public key is obtained separately.
 
-**Please wait until it's ready**
+**Please wait until it's ready before clicking NEXT**

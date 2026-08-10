@@ -5,4 +5,4 @@
 
 Scrollcase verifies the signed release and the artifact it commits to.
 
-**Please wait until it's done**
+**Please wait until it's done before clicking NEXT**
