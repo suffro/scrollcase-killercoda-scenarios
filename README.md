@@ -4,7 +4,7 @@ Interactive browser-based demos for [Scrollcase](https://scrollcase.dev), powere
 
 ## Scenarios
 
-- `scrollcase-demo/` — verify and run a real signed Scrollcase box in a disposable Linux environment.
+- `hello-box/` — verify and run a real signed Scrollcase box in a disposable Linux environment.
 
 ## Main project
 
