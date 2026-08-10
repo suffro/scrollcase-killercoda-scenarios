@@ -9,14 +9,12 @@ i=0
 
 while true; do
   if [[ -f "$READY" ]]; then
-    sleep 1
-    printf "\r✓ Demo ready"
+    printf "\rPreparing Scrollcase: ✓ Demo ready"
     exit 0
   fi
 
   if [[ -f "$FAILED" ]]; then
-    sleep 1
-    printf "\r✗ Demo setup failed"
+    printf "\rPreparing Scrollcase: ✗ Demo setup failed"
     exit 1
   fi
   
@@ -28,3 +26,4 @@ while true; do
   sleep 1
 done
 
+\n
