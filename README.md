@@ -1,0 +1,12 @@
+# Scrollcase Killercoda Scenarios
+
+Interactive browser-based demos for [Scrollcase](https://scrollcase.dev), powered by [Killercoda](https://killercoda.com).
+
+## Scenarios
+
+- `scrollcase-demo/` — verify and run a real signed Scrollcase box in a disposable Linux environment.
+
+## Main project
+
+- Website: https://scrollcase.dev
+- GitHub: https://github.com/suffro/scrollcase
