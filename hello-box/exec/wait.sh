@@ -19,7 +19,9 @@ while true; do
   fi
   
   if [[ i>0 ]]; then
-    printf "\rPreparing Scrollcase demo %c" "${spinner:i++%4:1}"
+    dots=$((i % 4))
+
+    printf "\rPreparing Scrollcase demo%-3s" "$(printf '%*s' "$dots" '' | tr ' ' '.')"
   fi
 
   i=$((i + 1))
