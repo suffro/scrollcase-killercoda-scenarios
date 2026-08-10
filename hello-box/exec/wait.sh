@@ -9,12 +9,12 @@ i=0
 
 while true; do
   if [[ -f "$READY" ]]; then
-    printf "\r✓ Demo ready\n"
+    printf "\r✓ Demo ready"
     exit 0
   fi
 
   if [[ -f "$FAILED" ]]; then
-    printf "\r✗ Demo setup failed\n"
+    printf "\r✗ Demo setup failed"
     exit 1
   fi
   
