@@ -1,0 +1,42 @@
+{
+  "title": "Build a Scrollcase Box",
+  "description": "Initialize a project, build a signed Scrollcase box, and verify it.",
+
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "exec/setup.sh"
+    },
+
+    "steps": [
+      {
+        "title": "Install and initialize",
+        "text": "install-init.md",
+        "foreground": "exec/install-init.sh"
+      },
+      {
+        "title": "Lock and commit",
+        "text": "lock.md",
+        "foreground": "exec/lock.sh"
+      },
+      {
+        "title": "Sign and build",
+        "text": "build.md",
+        "foreground": "exec/build.sh"
+      },
+      {
+        "title": "Verify the box",
+        "text": "verify.md",
+        "foreground": "exec/verify.sh"
+      }
+    ],
+
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

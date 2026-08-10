@@ -5,6 +5,8 @@ Interactive browser-based demos for [Scrollcase](https://scrollcase.dev), powere
 ## Scenarios
 
 - `hello-box/` — verify and run a real signed Scrollcase box in a disposable Linux environment.
+- `build-box/` — initialize a project, build a signed box, and verify it in a disposable Linux
+  environment.
 
 ## Main project
 
