@@ -11,19 +11,20 @@ while true; do
   if [[ -f "$READY" ]]; then
     printf "\rPreparing Scrollcase: ✓ Demo ready"
     echo
+    echo
     exit 0
   fi
 
   if [[ -f "$FAILED" ]]; then
     printf "\rPreparing Scrollcase: ✗ Demo setup failed"
     echo
+    echo
     exit 1
   fi
   
   dots=$((i % 4))
 
-  echo
-  echo
+  echo -n
   printf "\rPreparing Scrollcase demo%-3s" "$(printf '%*s' "$dots" '' | tr ' ' '.')"
 
   i=$((i + 1))
