@@ -1,10 +1,16 @@
 #!/usr/bin/env bash
 
+{ set +x; } 2>/dev/null
+
 cd ~/demo
 
 clear
-printf '\nVerifying the signed release and box archive.\n\n'
-printf '$ scrollcase verify box/*.release.json --public-key keys/example-signing-public.json\n\n'
+echo
+echo "########################################################################"
+echo "#####  Verifying the signed release and box archive  #####"
+echo
+echo '$ scrollcase verify box/*.release.json --public-key keys/example-signing-public.json'
+echo
 
 scrollcase verify box/*.release.json \
   --public-key keys/example-signing-public.json

@@ -1,18 +1,27 @@
 #!/usr/bin/env bash
 
 set -Eeuo pipefail
+{ set +x; } 2>/dev/null
 
 cd /root/demo
 
 clear
-printf '\nLocking the example environment for a reproducible build.\n\n'
-printf '$ scrollcase lock example-box/linux-x86_64-cpu\n\n'
+echo
+echo "########################################################################"
+echo "#####  Locking the example environment for a reproducible build  #####"
+echo
+echo '$ scrollcase lock example-box/linux-x86_64-cpu'
+echo
 
 scrollcase lock example-box/linux-x86_64-cpu
 
-printf '\nCommitting the generated project and lock.\n\n'
-printf '$ git add .\n'
-printf '$ git commit -m "Initialize Scrollcase example"\n\n'
+echo
+echo "########################################################################"
+echo "#####  Committing the generated project and lock  #####"
+echo
+echo '$ git add .'
+echo '$ git commit -m "Initialize Scrollcase example"'
+echo
 
 git add .
 git commit -m "Initialize Scrollcase example"

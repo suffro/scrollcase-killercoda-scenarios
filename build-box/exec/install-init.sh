@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 set -Eeuo pipefail
+{ set +x; } 2>/dev/null
 
 READY="/tmp/scrollcase-build-demo-ready"
 FAILED="/tmp/scrollcase-build-demo-failed"
@@ -29,8 +30,12 @@ fi
 cd "$DEMO_DIR"
 
 clear
-printf '\nInstalling the Scrollcase CLI.\n\n'
-printf '$ npm install --global scrollcase\n\n'
+echo
+echo "########################################################################"
+echo "#####  Installing the Scrollcase CLI  #####"
+echo
+echo '$ npm install --global scrollcase'
+echo
 
 npm install \
   --global \
@@ -39,7 +44,11 @@ npm install \
   scrollcase
 
 clear
-printf '\nInitializing the example project and local build toolchain.\n\n'
-printf '$ scrollcase init --install-toolchain\n\n'
+echo
+echo "########################################################################"
+echo "#####  Initializing the example project and local build toolchain  #####"
+echo
+echo '$ scrollcase init --install-toolchain'
+echo
 
 scrollcase init --install-toolchain < /dev/null
